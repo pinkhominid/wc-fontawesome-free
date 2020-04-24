@@ -1,0 +1,12 @@
+import { createIconClass } from '../lib/create-icon-class.js'
+import {
+  {{ faIconDefName }} as iconDef
+} from '../../node_modules/@fortawesome/free-{{ faIconStyle }}-svg-icons/index.es.js'
+
+const prefix = '{{ faIconPrefix }}'
+const iconName = '{{ faIconName }}'
+const iconClass = createIconClass(prefix, iconName, iconDef)
+
+customElements.define('{{ wcIconName }}', iconClass)
+
+export default iconClass

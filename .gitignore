@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# macOS cruft
+.DS_Store
+
+# Temporary files
+.tmp/

@@ -1,20 +1,39 @@
 {
-  "name": "wc-fontawesome",
+  "name": "wc-fontawesome-free",
   "version": "0.0.0",
-  "description": "Font Awesome icons as Web Components",
+  "description": "Font Awesome Free icons as Web Components",
   "module": "index.js",
+  "files": [
+    "lib",
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist/*",
+    "prebuild": "npm run clean",
+    "build": "node build/generate-wc-icons.js",
+    "start": "http-server -a localhost -o example"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pinkhominid/wc-fontawesome.git"
+    "url": "git+https://github.com/pinkhominid/wc-fontawesome-free.git"
   },
   "keywords": [],
   "author": "pinkhominid <pinkhominid@birdbomb.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pinkhominid/wc-fontawesome/issues"
+    "url": "https://github.com/pinkhominid/wc-fontawesome-free/issues"
   },
-  "homepage": "https://github.com/pinkhominid/wc-fontawesome#readme"
+  "homepage": "https://github.com/pinkhominid/wc-fontawesome-free#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-regular-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "construct-style-sheets-polyfill": "^2.3.5"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "mustache": "^4.0.1",
+    "rimraf": "^3.0.2"
+  }
 }

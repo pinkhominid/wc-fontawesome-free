@@ -2,7 +2,7 @@
   "name": "wc-fontawesome-free",
   "version": "1.0.0",
   "description": "Font Awesome Free icons as Web Components",
-  "module": "index.js",
+  "module": "fas-yin-yang-icon.js",
   "files": [
     "lib",
     "dist"
@@ -17,7 +17,15 @@
     "type": "git",
     "url": "git+https://github.com/pinkhominid/wc-fontawesome-free.git"
   },
-  "keywords": [],
+  "keywords": [
+    "web",
+    "components",
+    "webcomponents",
+    "fontawesome",
+    "free",
+    "icons",
+    "svg"
+  ],
   "author": "pinkhominid <pinkhominid@birdbomb.com>",
   "license": "MIT",
   "bugs": {

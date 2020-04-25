@@ -1,6 +1,6 @@
 {
   "name": "wc-fontawesome-free",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Font Awesome Free icons as Web Components",
   "module": "fas-yin-yang-icon.js",
   "files": [

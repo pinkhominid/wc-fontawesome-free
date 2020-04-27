@@ -25,8 +25,10 @@ npm i wc-fontawesome-free construct-style-sheets-polyfill
 
 ## Use
 1. Look up a [free icon](https://fontawesome.com/icons?d=gallery&m=free)
-2. Import using the following format `<style-prefix>-<icon-name>-icon.js` where `<style-prefix>` is `fab` (brands), `far` (regular), or `fas` (solid)
-3. Add the custom element tag using the same format
+2. Import using the following format `<style-prefix>-<icon-name>-icon.js`
+3. Add the custom element tag using the format `<style-prefix>-<icon-name>-icon`
+
+Where `<style-prefix>` is `fab` (brands), `far` (regular), or `fas` (solid)
 
 ```html
 <script type="module">
@@ -35,10 +37,10 @@ npm i wc-fontawesome-free construct-style-sheets-polyfill
   import '../node_modules/construct-style-sheets-polyfill/dist/adoptedStyleSheets.js';
 
   // Import icons you need
-  import '../node_modules/wc-fontawesome-free/fab-accessible-icon.js'
-  import '../node_modules/wc-fontawesome-free/far-moon-icon.js'
-  import '../node_modules/wc-fontawesome-free/fas-user-astronaut-icon.js'
-  import '../node_modules/wc-fontawesome-free/fas-yin-yang-icon.js'
+  import '../node_modules/wc-fontawesome-free/dist/fab-accessible-icon.js'
+  import '../node_modules/wc-fontawesome-free/dist/far-moon-icon.js'
+  import '../node_modules/wc-fontawesome-free/dist/fas-user-astronaut-icon.js'
+  import '../node_modules/wc-fontawesome-free/dist/fas-yin-yang-icon.js'
 </script>
 
 <fab-accessible-icon class="fa-border"></fab-accessible-icon>

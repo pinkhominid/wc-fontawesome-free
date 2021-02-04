@@ -34,13 +34,13 @@ Where `<style-prefix>` is `fab` (brands), `far` (regular), or `fas` (solid)
 <script type="module">
   // Import Constructible Stylesheets polyfill for Firefox & Safari
   // https://www.npmjs.com/package/construct-style-sheets-polyfill
-  import '../node_modules/construct-style-sheets-polyfill/dist/adoptedStyleSheets.js';
+  import 'construct-style-sheets-polyfill/dist/adoptedStyleSheets.js';
 
   // Import icons you need
-  import '../node_modules/wc-fontawesome-free/dist/fab-accessible-icon.js'
-  import '../node_modules/wc-fontawesome-free/dist/far-moon-icon.js'
-  import '../node_modules/wc-fontawesome-free/dist/fas-user-astronaut-icon.js'
-  import '../node_modules/wc-fontawesome-free/dist/fas-yin-yang-icon.js'
+  import 'wc-fontawesome-free/dist/fab-accessible-icon.js'
+  import 'wc-fontawesome-free/dist/far-moon-icon.js'
+  import 'wc-fontawesome-free/dist/fas-user-astronaut-icon.js'
+  import 'wc-fontawesome-free/dist/fas-yin-yang-icon.js'
 </script>
 
 <fab-accessible-icon class="fa-border"></fab-accessible-icon>
